@@ -36,7 +36,7 @@ bottom:0;
 background-color: #D9DBE7;
 opacity: 0.85;
 color: white;
-z-homescreen: 9999;
+z-index: 9999;
 }
 .Quote {
   width: 100%;
