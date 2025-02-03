@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #ff3700
+}
+.main-screen {
+  width: 90vw;
+  height: 90vh;
+  background: #ff3700; /* CHANGE BACK TO OG COLOR*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.overlay{
+display: flex;
+position: absolute;
+flex-direction: column;
+gap: 50px;
+padding: 10px;
+top:0;
+left: 0;
+width: 30%;
+bottom:0;
+background-color: black;
+opacity: 0.85;
+color: white;
+z-homescreen: 9999;
+}
+
+.Quote {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-size: clamp(24px, 4vw, 48px);
+  font-family: Inter; /* CHANGE TO NEW FONT */
+  font-weight: 800;
+  color: #D9DBE7;
+}
+.options {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10%;
+  padding-bottom: 50px;
+}
+.line {
+  width: 77px;
+  border: 3px #D9DBE7 solid;
+}
+.content-Quote{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.content-Employment-Based {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 45%;
+}
+.content-About {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  width: 45%;
+}
+.Rectangle3, .Rectangle4, .Rectangle5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #D9DBE7;
+  box-shadow: 0px 0px 50px 10px #ff3700 inset;
+  border-radius: 40px;
+  border: 1px #D9DBE7 solid;
+  overflow: hidden;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+}
+.Rectangle3 {
+  max-width: 250px;
+  max-height: 530px;
+
+}
+.Rectangle4, .Rectangle5 {
+  max-height: 250px;
+  min-height: 150px;
+}
+.content {
+  display: flex;
+  font-size: clamp(16px, 2vw, 24px); 
+  font-family: Inter; /* CHANGE TO NEW FONT */
+  font-weight: 800;
+  color: #ff3700;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.contentTitle{
+  font-size: clamp(16px, 2vw, 24px);
+  font-family: Inter; /* CHANGE TO NEW FONT */
+  font-weight: 800;
+  color: #ff3700;
+}
+.container-Close{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.container-overlayOptions{
+    display: flex;
+    text-decoration: none;
+}
+.overlayOptions{
+  font-size: clamp(16px, 2vw, 24px);
+  font-family: Inter; /* CHANGE TO NEW FONT */ 
+  font-weight: 800;
+  color: #ff3700;  /* CHANGE BACK TO OG COLOR*/
+  text-decoration: none;
+  text-align: right;
+}
