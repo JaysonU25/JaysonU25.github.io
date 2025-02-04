@@ -21,6 +21,7 @@ html, body {
   flex-flow: row wrap;
   justify-content: space-between;
   gap: 10px;
+  padding-bottom: 5%;
 }
 
 .overlay {
@@ -66,8 +67,9 @@ z-index: 9999;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: top;
   width: 100%;
+  height: fit-content;
 }
 .content-Employment-Based {
   display: flex;
