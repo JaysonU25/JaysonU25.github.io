@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html">
+<html>
   <head>
-    <title>JaysonU25 Portfolio</title>
+    <title>JaysonU25</title>
     <link rel="stylesheet" href="styles_links.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
+  <body>    
+    <div id="overlay" class="overlay">
+      <button id="close" class="container-Close"> 
+        <div class="overlayOptions">Close</div>
+    </button>
+        <a href="index.html" class="container-overlayOptions"> 
+          <div class="overlayOptions">Home</div>
+      </a>
+        <a href="experience.html" class="container-overlayOptions"> 
+            <div class="overlayOptions">Experience</div>
+        </a>
+        <a href="skills.html" class="container-overlayOptions"> 
+            <div class="overlayOptions">Skills</div>
+        </a>
+        <a href="certifications.html" class="container-overlayOptions"> 
+            <div class="overlayOptions">Certifications</div>
+        </a>
+
+    </div>
     <div class="main-screen">
       <div class="content-Quote">   
-
-        <a href="links_options.html" class="options">
+        <button id="options" class="options">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
-        </a>  
+        </button>  
         <div class="Quote">
-        “If you don’t take risks, you can’t create a future”<br/> -Monkey D. Luffy
+          “If you don’t take risks, you can’t create a future”<br/> -Monkey D. Luffy
         </div>
       </div>
       <div class="content-About">
@@ -29,5 +46,6 @@
           </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/functionality.js"> </script>
   </body>
 </html>
