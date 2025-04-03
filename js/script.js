@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Fetch the content of instajay.html
-    fetch("instajay.html")
+    // Fetch the content of index.html
+    fetch("index.html")
         .then(response => response.text())
         .then(data => {
             // Create a temporary element to parse the HTML
