@@ -1,4 +1,4 @@
-
+/* SHARED */
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +15,8 @@ html, body {
   overflow-y: hidden;
   background-color: black;
 }
+
+/* MAIN */
 .main-screen {
   width: 100vw;
   height: 100vh;
@@ -253,4 +255,57 @@ html, body {
   color: #00ee00;
   font-size: 3vw;
 
+}
+
+
+/* HACK THE TERMINAL */
+.hack-screen{
+    width: 100vw;
+    height: 100vh;
+    background: black; /* CHANGE BACK TO OG COLOR*/
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+  }
+.hack-hex-container{
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 15vw;
+  color: black;
+  font-size: 1.6vw;
+}
+.hack-text-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 80%;
+  width: 20vw;
+  font-size: 1.6vw;
+}
+.hack-response-container{
+  height: 80%;
+  width: 20vw;
+  background-color: blue;
+  font-size: 2vw;
+}
+
+.hack-line {
+  display: block;
+  width: fit-content;
+  align-self: center;
+  text-align: justify;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace; /* Hacker-style font */
+  color: #0f0; /* Green text */
+  background-color: black; /* Black background */
+}
+
+.hack-line::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
