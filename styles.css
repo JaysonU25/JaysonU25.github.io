@@ -24,7 +24,7 @@ html, body {
   border-bottom: 2px solid black;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 700px) or (orientation: portrait){
     html{
         width: 100%;
         max-width: 100%;
@@ -90,10 +90,7 @@ html, body {
     }
     .profile-links{
         grid-row: 3 / span 2 !important;
-        padding-left: 20px !important;
-        justify-content: flex-start !important;
         align-items: flex-end;
-        gap: 30px !important;
     }
     .links-entry{
         font-size: 1.5vh !important;
@@ -595,8 +592,7 @@ body.dark-mode {
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
-    overflow-x: auto;
-    scrollbar-width: none;
+    overflow: auto;
 }
 .links-entry{
     display: flex;

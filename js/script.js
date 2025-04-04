@@ -146,10 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
         body.classList.add("dark-mode");
         
         darkModeSwitch.classList.add("active");
-        homeElement.src = 'assets/home_white.png';
-        resumeElement.src = '../assets/Resume_white.png';
-        homeElement2.src = 'assets/home_white.png';
-        resumeElement2.src = '../assets/Resume_white.png';
+        homeElement.src = 'assets/home_white.webp';
+        resumeElement.src = '../assets/Resume_white.webp';
+        homeElement2.src = 'assets/home_white.webp';
+        resumeElement2.src = '../assets/Resume_white.webp';
         storyComponents.forEach( comp => { comp.style.backgroundColor = 'black'});
     }
 
@@ -161,17 +161,17 @@ document.addEventListener("DOMContentLoaded", function () {
         // Save preference
         if (body.classList.contains("dark-mode")) {
             localStorage.setItem("dark-mode", "enabled");
-            homeElement.src = 'assets/home_white.png';
-            resumeElement.src = '../assets/Resume_white.png';
-            homeElement2.src = 'assets/home_white.png';
-            resumeElement2.src = '../assets/Resume_white.png';
+            homeElement.src = 'assets/home_white.webp';
+            resumeElement.src = '../assets/Resume_white.webp';
+            homeElement2.src = 'assets/home_white.webp';
+            resumeElement2.src = '../assets/Resume_white.webp';
             storyComponents.forEach( comp => { comp.style.backgroundColor = 'black'});
         } else {
             localStorage.setItem("dark-mode", "disabled");
-            homeElement.src = '../assets/home.png';
-            resumeElement.src = '../assets/Resume.png';
-            homeElement2.src = 'assets/home.png';
-            resumeElement2.src = '../assets/Resume.png';
+            homeElement.src = '../assets/home.webp';
+            resumeElement.src = '../assets/Resume.webp';
+            homeElement2.src = 'assets/home.webp';
+            resumeElement2.src = '../assets/Resume.webp';
             storyComponents.forEach( comp => { comp.style.backgroundColor = 'black'});
         }
 
