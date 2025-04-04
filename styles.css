@@ -273,7 +273,9 @@ html, body {
     color: white;
 }   
 
-
+a{
+    color: var(--main-quadrary);
+}
 
 /* MAIN ELEMENTS*/
 .main{
@@ -289,6 +291,7 @@ html, body {
     width: 100vw;
     background-color: inherit;
     font-family: Arial, Helvetica, sans-serif;
+    text-emphasis-color: var(--main-tertiary);
 }
 
 /* Toggle Switch */
@@ -546,6 +549,7 @@ body.dark-mode {
     grid-row: 3;
     grid-column: 2;
     padding: 10px;
+    text-decoration: none;
 }
 .profile-stats{
     display: flex;
