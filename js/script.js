@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.toggle("clicked"); // Toggle the red fill
             if(heartstatus == 0){
                 heartstatus = 1;
-                heart.innerHTML = "&#10084;"
+                heart.innerHTML = "&#9829;"
             } else {
                 heartstatus = 0;
                 heart.innerHTML = "&#9825;"
@@ -65,12 +65,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevStory = document.getElementById('prev-story');
     const nextStory2 = document.getElementById('next-story-small');
     const prevStory2 = document.getElementById('prev-story-small');
+    let darkModeSwitch = document.getElementById("darkModeSwitch");
 
     let currentIndex = 0;
 
 
     function openStory(index) {
         storyOverlay.style.display = "flex";
+        darkModeSwitch.style.display = 'none';
         currentIndex = index;
 
         if (storyComponents[index]) {
@@ -83,38 +85,45 @@ document.addEventListener("DOMContentLoaded", function () {
             openStory(index);
         });
     });
+    if (quitButton){
+        quitButton.onclick = () => {
+            storyOverlay.style.display = 'none';
+            darkModeSwitch.style.display = 'flex'
+        };
+    }
 
-    quitButton.onclick = () => {
-        storyOverlay.style.display = 'none';
-    };
-
-    
-    nextStory.onclick = () => {
-        if (currentIndex < storyComponents.length - 1) {
-            currentIndex++;
-            openStory(currentIndex);
-        }
-    };
-
-    prevStory.onclick = () => {
-            if (currentIndex > 0) {
-                currentIndex--;
+    if(nextStory){
+        nextStory.onclick = () => {
+            if (currentIndex < storyComponents.length - 1) {
+                currentIndex++;
                 openStory(currentIndex);
             }
+        };
     };
+    if(prevStory){
+        prevStory.onclick = () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    openStory(currentIndex);
+                }
+        };
+    };
+    if(nextStory2){
     nextStory2.onclick = () => {
         if (currentIndex < storyComponents.length - 1) {
             currentIndex++;
             openStory(currentIndex);
         }
+    }
     };
-
-    prevStory2.onclick = () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                openStory(currentIndex);
-            }
-    };
+    if(prevStory2){
+        prevStory2.onclick = () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    openStory(currentIndex);
+                }
+        };
+    };  
 
 });
 
@@ -125,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         darkModeSwitch = document.getElementById("darkModeSwitch2");
     }
     const body = document.body;
+    const html = document;
     const homeElement = document.getElementById("home");
     const resumeElement = document.getElementById("resume");
     const homeElement2 = document.getElementById("home2");
@@ -134,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check if dark mode was previously enabled
     if (localStorage.getItem("dark-mode") === "enabled") {
         body.classList.add("dark-mode");
+        
         darkModeSwitch.classList.add("active");
         homeElement.src = 'assets/home_white.png';
         resumeElement.src = '../assets/Resume_white.png';
