@@ -550,6 +550,7 @@ body.dark-mode {
     grid-column: 2;
     padding: 10px;
     text-decoration: none;
+    z-index: 3;
 }
 .profile-stats{
     display: flex;
