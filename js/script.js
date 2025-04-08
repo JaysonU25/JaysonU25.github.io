@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
             resumeElement.src = '../assets/Resume.webp';
             homeElement2.src = 'assets/home.webp';
             resumeElement2.src = '../assets/Resume.webp';
-            storyComponents.forEach( comp => { comp.style.backgroundColor = 'black'});
+            storyComponents.forEach( comp => { comp.style.backgroundColor = 'white'});
         }
 
     });
