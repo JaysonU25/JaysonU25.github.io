@@ -539,7 +539,7 @@ body.dark-mode {
     display: grid;
     height: 60%;
     width: auto;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
     grid-template-rows: 20% 5% 40% 20% 15%;
     width: 100%;
     font-size: 2.5vh;
