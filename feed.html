@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instajay</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="assets/instajay.ico">
+
+    </head>
+    <body>
+        <div class="story-overlay" id="story-overlay">
+            <div class="title-quit-container">
+                <div class="title-container" style="align-items: flex-end;">Instajay</div><div id="Quit" style="cursor: pointer; ">X</div>
+            </div>
+            <div class="story-viewer-container">
+                <div class="change-story" id="prev-story">&#11031;</div>
+                <div class="story-viewer">
+                    <div class="story-component" id="story-component-1">
+                        <img class="stories-component-image" src="assets/Luna.webp" loading="lazy">
+                        <h1>Luna</h1>
+                        <p>This is my cat Luna! She lives with my parents. She's a very sassy cat.</p>
+                    </div>
+                    <div class="story-component" id="story-component-2">
+                        <img class="stories-component-image" src="assets/Cody.webp" loading="lazy">
+                        <h1>Cody</h1>
+                        This is my dog Cody! He lives with my parents. He's a very crazy dog.
+                    </div>
+                    <div class="story-component" id="story-component-3">
+                        <img class="stories-component-image" src="assets/Fish.webp" loading="lazy">
+                        <h1>Fish</h1>
+                        This is my cat Fish! He lives with me. He's a very playful cat.
+                    </div>
+                    <div class="story-component" id="story-component-4">
+                        <img class="stories-component-image" src="assets/Thor.webp" loading="lazy">
+                        <h1>Thor</h1>
+                        This is my cat Thor. He also lives with me. He's a distinguished gentleman.
+                    </div>
+                    <div class="story-component" id="story-component-5">
+                        <img class="stories-component-image" src="assets/Loki.webp" loading="lazy">
+                        <h1>Loki</h1>
+                        This is my cat Loki. He lives with my parents. He's him.
+                    </div>
+                    <div class="story-component" id="story-component-6">
+                        <img class="stories-component-image" src="assets/Nemo.webp" loading="lazy">
+                        <h1>Nemo</h1>
+                        This is my cat Nemo. He lives with my parents. He's such a hyper cat.
+                    </div>
+                </div>
+                <div class="change-story" id="next-story">&#11030;</div>
+                <div class="change-story-small-container">
+                    <div class="change-story-small" id="prev-story-small">&#11031;</div>
+                    <div class="change-story-small" id="next-story-small">&#11030;</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="title-container2">InstaJay
+
+        </div>
+        <div class="pages">
+            <div class="title-container">InstaJay</div>
+            <div class="pages-icons">
+                <a class="pages-row" href="feed.html"><img class="pages-icon" src="assets/home.webp" alt="Home-button" id="home">Home</a>
+                <a class="pages-row" href="resume.html"><img class="pages-icon" src="assets/Resume.webp" alt="Resume-Button" id="resume">Resume</a>
+                <a class="pages-row" href="index.html"><img class="pages-icon-profile" src="assets/linkedinPhoto.webp" alt="Profile-Button">Profile</a>
+            </div>
+
+        </div>
+        <div class="main">
+            <div id="darkModeSwitch">
+                <div class="toggle-circle"></div>
+            </div>
+            <div class="stories">
+                <div class="stories-entry" src="assets/Luna.webp" id="temp-story-opener"><img class="stories-image" src="assets/Luna.webp" alt="Story-Button">Luna</div>
+                <div class="stories-entry" src="assets/Cody.webp"><img class="stories-image" src="assets/Cody.webp" alt="Story-Button">Cody</div>
+                <div class="stories-entry" src="assets/Fish.webp"><img class="stories-image" src="assets/Fish.webp" alt="Story-Button">Fish</div>
+                <div class="stories-entry" src="assets/Thor.webp"><img class="stories-image" src="assets/Thor.webp" alt="Story-Button">Thor</div>
+                <div class="stories-entry" src="assets/Loki.webp"><img class="stories-image" src="assets/Loki.webp" alt="Story-Button">Loki</div>
+                <div class="stories-entry" src="assets/Nemo.webp"><img class="stories-image" src="assets/Nemo.webp" alt="Story-Button">Nemo</div>
+            </div>
+            <div class="posts">
+                <div class="post" id="post-1">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <button class="prev-image">&#11031;</button>
+                        <div class="images-container">
+                            <img class="post-image" src="assets/Headshot.webp" alt="Post 1">
+                        </div>
+                        <button class="next-image">&#11030;</button>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+                        <h3> About: </h3> I am a highly motivated and ambitious Java, Python, and C coding 4th year Computer Science student with internship and leadership experience.
+                    </div>
+                </div>
+
+                <div class="post" id="post-2">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <button class="prev-image">&#11031;</button>
+                        <div class="images-container">
+                            <img class="post-image" src="assets/Experience.webp" alt="Post 2" loading="lazy">
+                        </div>
+                        <button class="next-image">&#11030;</button>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+                            <h3>Experience: </h3>
+                            <ul>
+                                <li>Walmart Global Tech: Software Engineering Intern II</li>
+                                <li>Virginia State Police: Cyber Forensics Intern</li>
+                                <li>Commonwealth Cyber Initiative: AI Research Intern</li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="post" id="post-3">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <button class="prev-image">&#11031;</button>
+                        <div class="images-container">
+                            <img class="post-image" src="assets/Skills.webp" alt="Post 3" loading="lazy">
+                        </div>
+                        <button class="next-image">&#11030;</button>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+
+                        <h3> Hard Skills: </h3>
+                        <ul>
+                            <li>Scala</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post" id="post-4">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <button class="prev-image">&#11031;</button>
+                        <div class="images-container">
+                            <img class="post-image" src="assets/Certifications.webp" alt="Post 4" loading="lazy">
+                        </div>
+                        <button class="next-image">&#11030;</button>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+                        <h3>Certifications:</h3>
+                        <ul style="text-decoration: none; color: inherit;">
+                            <li><a href="https://www.coursera.org/account/accomplishments/verify/IPKN9QCBRLOM" style="text-decoration: none; color: inherit;">Scala Certification</a></li>
+                            <li><a href="https://www.credly.com/badges/32ee4c30-9190-4af7-8e87-e514f664f6f4/linked_in_profile" style="text-decoration: none; color: inherit;">IBM Z Advanced</a></li>
+                            <li><a href="https://www.credly.com/badges/66fa64ee-32e3-4035-9527-f20fdd6cc775/linked_in_profile" style="text-decoration: none; color: inherit;">IBM Z Core</a></li>
+                            <li><a href="https://courses.cognitiveclass.ai/certificates/d0e51b404b8649f1aefd788750ab4e35" style="text-decoration: none; color: inherit;">Introduction to Cloud</a></li>
+                            <li><a href="https://courses.cognitiveclass.ai/certificates/e72701b0deb445ab9e745f4f48d95108" style="text-decoration: none; color: inherit;">Big Data 101</a></strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post" id="post-5">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <button class="prev-image">&#11031;</button>
+                        <div class="images-container">
+                            <img class="post-image" src="assets/WGT.webp" alt="Post 5" loading="lazy">
+                        </div>
+                        <button class="next-image">&#11030;</button>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+                        <h3>My Time at WGT:</h3>
+                        My first experience working for Walmart came in the summer of 2024 as a Software Engineering Intern.
+                        During this internship I met so many wonderful people, and I worked on a project that not only tested but taught me 
+                        so much about Software Developement. My project revolved around designing and implementing a RESTFul API in Scala
+                        which interacted with an Elastic Search database. 
+                        I will be returning to work for Walmart in July 2025 to begin working as a Software Engineer 2!
+                    </div>
+                </div>
+                <div class="post" id="post-6">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <button class="prev-image">&#11031;</button>
+                        <div class="images-container">
+                            <img class="post-image" src="assets/VCU.webp" alt="Post 6" loading="lazy">
+                        </div>
+                        <button class="next-image">&#11030;</button>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+                        <h3>My Time at VCU:</h3>
+                        I have attended Virginia Commonwealth University since August 2021 as a member of both the College of Engineering and the Honors College.
+                        I have been pursuing a Computer Science Degree concentrating in Software Engineering. 
+                        I chose VCU as I had grown up around the University for the majority of my life. 
+                        I plan to graduate Summa Cum Luade in May 2025.
+                    </div>
+                </div>
+                <div class="post" id="post-7">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <button class="prev-image">&#11031;</button>
+                        <div class="images-container">
+                            <img class="post-image" src="assets/Bank_of_America_logo.webp" alt="Post 6" loading="lazy">
+                            <img class="post-image" src="assets/ReactFront.webp" alt="Post 6" loading="lazy">
+                            <img class="post-image" src="assets/tableauSSHomepage.webp" alt="Post 6" loading="lazy">
+                            <img class="post-image" src="assets/CS-25-319 POSTER.webp" alt="Post 6" loading="lazy">
+                        </div>
+                        <button class="next-image">&#11030;</button>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+                        <h3>SENIOR CAPSTONE!!</h3> This is my senior capstone project sponsored by Bank of America! 
+                        It revolved around enhancing their shared services layer through the utilization of GraphQL. 
+                        I ended up experimenting with not only Hasura, a GraphQL engine, but Tableau for data visualization, 
+                        Grafana for data quality control, and Auth0 for data governance. In the end we created an efficient system,
+                        which allowed data to flow from a Postgres and a MySQL database to each piece of the system, with nothing more than a single query
+                        needed to access your desired data.
+                    </div>
+                </div>
+                <div class="post" id="post-8">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <div class="images-container">
+                            <img class="post-image" src="assets/SanFranSkyline.webp" alt="Post 8" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+                        <h3>Moving to San Francisco!</h3> I moved to San Francisco in July 2025 to begin my career as a Software Engineer 2 at Walmart Global Tech! 
+                        It was a very big move for me, as I had never lived outside of Virginia before. However, in my time at WGT I have met so many wonderful people, 
+                        and I have learned so much about how the industry works. I have also developed tremendously as a Software Engineer, earning a "Making the Difference" 
+                        award in my first year after being nominated by my Manager!
+                    </div>
+                </div>
+                <div class="post" id="post-9">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <div class="images-container">
+                            <img class="post-image" src="assets\IEE_PAGE.png" alt="Post 9" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+                        
+                    </div>
+                    <div class="post-caption">
+                        <h3>Getting Published!</h3> After submitting my capstone project, 
+                        our team decided that we wanted to take it a step further. So we took on the challege of turning
+                        our project into a full fledged Research Paper! Wildly enough we even got it published to IEE during the
+                        2025 IEEE/ACS 22nd International Conference on Computer Systems and Applications (AICCSA).
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="pages-icons2">
+            <a class="pages-row" href="feed.html" src="assets/home.webp"><img class="pages-icon" src="assets/home.webp" alt="Home-button" id="home2" loading="lazy"></a>
+            <a class="pages-row" href="resume.html" src="assets/home.webp"><img class="pages-icon" src="assets/Resume.webp" alt="Resume-Button" id="resume2" loading="lazy"></a>
+            <a class="pages-row" href="index.html" src="assets/home.webp"><img class="pages-icon-profile" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a></div>
+    <script src="js/script.js" defer></script>
+    </body>
+</html>
