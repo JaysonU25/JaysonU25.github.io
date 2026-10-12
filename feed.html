@@ -307,12 +307,17 @@
                     </div>
                     <div class="post-images">
                         <div class="images-container">
-                            <img class="post-image" src="assets/JayTrader.webp" alt="Post 10" loading="lazy">
+                        <button class="prev-image">&#11031;</button>
+                            <div class="images-container">
+                                <img class="post-image" src="assets/Jay_trader_light_home.png" alt="Post 10" loading="lazy">
+                                <img class="post-image" src="assets/macros-page.png" alt="Post 10" loading="lazy">
+                                <img class="post-image" src="assets/news-page.png" alt="Post 10" loading="lazy">
+                            </div>
+                        <button class="next-image">&#11030;</button>
                         </div>
                     </div>
                     <div class="post-options">
                         <div class="heart">&#9825;</div>
-
                     </div>
                     <div class="post-caption">
                         <h3>Jay Trader: One Dashboard for Five Financial APIs</h3> Jay Trader started as a question: could I pull market data from several free
@@ -333,6 +338,49 @@
                         Vendor docs don't tell you everything. CoinGecko's free tier rejects history older than 365 days with an HTTP 401
                         that looks like an auth failure, and Alpha Vantage quietly moved a feature behind its premium tier. Building around
                         those surprises was the most useful part of the project.
+                    </div>
+                </div>
+                <div class="post" id="post-11">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <button class="prev-image">&#11031;</button>
+                        <div class="images-container">
+                            <img class="post-image" src="assets/job-tracker.png" alt="Post 11" loading="lazy">
+                            <img class="post-image" src="assets/job-tracker-run-logs.png" alt="Post 11" loading="lazy">
+                        </div>
+                        <button class="next-image">&#11030;</button>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+
+                    </div>
+                    <div class="post-caption">
+                        <h3>Job Tracker: Never Miss a Posting Again</h3> I kept seeing jobs I was interested in show up late, or not at all,
+                        because I had to find them on each company's careers page by hand. I wanted to hear about a new posting
+                        the same hour it went up, without checking twenty career pages. So I built Job Tracker.
+                        <br><br>
+                        It checks a list of companies every hour for new early career to mid-level US software engineering jobs and sends
+                        a push notification to my phone through ntfy. The filters are simple: title keywords, US locations, and a cap on
+                        required years of experience, all set in a config file.
+                        <br><br>
+                        <b>Tech stack:</b> Python 3.12, httpx for HTTP, PyYAML for the company list and config, BeautifulSoup for parsing
+                        LinkedIn results, and pytest for tests. GitHub Actions runs it on an hourly cron. The job state lives in a
+                        JSON file that the workflow commits back to the repo, so the workflow never needs a database. Alerts go out
+                        through ntfy.sh.
+                        <br><br>
+                        <b>The tech stack problem:</b> every company hosts jobs differently. Greenhouse, Lever, and Ashby expose public
+                        job board APIs, which are clean and reliable. Many other companies don't, and the fallback is LinkedIn's guest
+                        job search, an undocumented endpoint that can break or block requests from GitHub's servers. Mixing both meant
+                        one job model, one state format, and a per-company failure counter, so a single broken source doesn't silence
+                        the rest. Scheduled runs can also be late or skipped, so deduplication is based on saved state rather than on
+                        the run schedule. Nothing gets lost; the next run catches up.
+                        <br><br>
+                        The first check of each company records its existing jobs without alerting, so I only hear about new postings.
+                        If a company fails six checks in a row, I get one "source failing" alert, followed by a "recovered" alert when it
+                        works again.
                     </div>
                 </div>
             </div>
