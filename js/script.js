@@ -184,6 +184,7 @@ document.querySelectorAll(".post-images").forEach(post => {
     const images = imagesContainer.querySelectorAll(".post-image");
     const prevButton = post.querySelector(".prev-image");
     const nextButton = post.querySelector(".next-image");
+    if (!prevButton || !nextButton) return; // single-image post, no carousel
 
     let currentIndex = 0;
 
