@@ -300,6 +300,41 @@
                         2025 IEEE/ACS 22nd International Conference on Computer Systems and Applications (AICCSA).
                     </div>
                 </div>
+                <div class="post" id="post-10">
+                    <div class="post-header">
+                        <a href="index.html" src="assets/home.webp"><img class="post-header-image" src="assets/linkedinPhoto.webp" alt="Profile-Button" loading="lazy"></a>
+                        Me!
+                    </div>
+                    <div class="post-images">
+                        <div class="images-container">
+                            <img class="post-image" src="assets/JayTrader.webp" alt="Post 10" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="post-options">
+                        <div class="heart">&#9825;</div>
+
+                    </div>
+                    <div class="post-caption">
+                        <h3>Jay Trader: One Dashboard for Five Financial APIs</h3> Jay Trader started as a question: could I pull market data from several free
+                        financial APIs into one place and make it actually useful? It aggregates Alpha Vantage stock prices, FRED economic
+                        indicators, CoinGecko crypto, Finnhub news and earnings, and ECB exchange rates into a single Postgres database,
+                        then serves them through a REST API to a React dashboard.
+                        <br><br>
+                        <b>Tech stack:</b> Python 3.12, FastAPI, SQLAlchemy 2.0 (async) with asyncpg, Alembic migrations, and Postgres
+                        (Neon in production, Docker for local development). The frontend is React 19 with TypeScript, Vite, React Router,
+                        TanStack Query, and Apache ECharts. Tests run on pytest for the backend and Vitest with MSW for the frontend.
+                        Deployment is planned for Fly.io (API), Neon (database), Cloudflare (frontend), and GitHub Actions as the scheduler.
+                        <br><br>
+                        <b>What I wanted to accomplish:</b> a clean ingest pipeline, a data model I could defend, and a frontend worth
+                        looking at. Correctness mattered more than scope, so I kept it to no auth, no accounts, and no real-time data.
+                        The hardest constraint turned out to be Alpha Vantage's 25 requests per day, which shaped the backfill strategy,
+                        the symbol universe, and the ingest schedule. Ingest jobs are idempotent, so a missed scheduled run heals on the next one.
+                        <br><br>
+                        Vendor docs don't tell you everything. CoinGecko's free tier rejects history older than 365 days with an HTTP 401
+                        that looks like an auth failure, and Alpha Vantage quietly moved a feature behind its premium tier. Building around
+                        those surprises was the most useful part of the project.
+                    </div>
+                </div>
             </div>
         </div> 
         <div class="pages-icons2">
